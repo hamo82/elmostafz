@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>الـمـسـتـفـز الاصـلـي</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+    body {
+      background: linear-gradient(to right, #8b0000, #b22222, #ff4500);
+      color: #fff;
+      font-family: 'Cairo', sans-serif;
+      margin: 0; padding: 0;
+      direction: rtl;
+    }
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      color: #3399ff;
+      margin-top: 40px;
+      text-shadow: 0 0 10px #00ccff, 0 0 20px #3399ff;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+    .card {
+      background: #330000cc;
+      border: 2px solid #ff4444;
+      border-radius: 20px;
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px #ff555544;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff666699;
+    }
+    .card h2 {
+      font-size: 20px;
+      color: #ff9999;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #ff5555;
+    }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      color: #ddd;
+      font-size: 13px;
+      background-color: #330000cc;
+      border-top: 1px solid #660000;
+    }
+    .comments {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #220000cc;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 0 15px #ff4444aa;
+      font-size: 12px;
+      color: #ffbbbb;
+      font-style: italic;
+      direction: rtl;
+    }
+    .comment {
+      border-bottom: 1px solid #660000;
+      padding: 8px 5px;
+      margin-bottom: 8px;
+    }
+    .comment:last-child {
+      border-bottom: none;
+    }
+    #addCommentSection {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      background: #330000cc;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff4444aa;
+      direction: rtl;
+      color: #ffdddd;
+    }
+    #addCommentSection textarea {
+      width: 100%;
+      height: 70px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 14px;
+      resize: none;
+    }
+    #addCommentSection button {
+      margin-top: 10px;
+      background: #ff4444;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    #addCommentSection button:hover {
+      background: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✨ الـمـسـتـفـز الاصـلـي ✨</h1>
+
+  <div class="container">
+    <div class="card" onclick="goWhatsApp('شـراء أرقـام فـيـك')"><h2>📞 شـراء أرقـام فـيـك</h2></div>
+    <div class="card" onclick="goWhatsApp('شـراء قـنـوات')"><h2>📺 شـراء قـنـوات</h2></div>
+    <div class="card" onclick="goWhatsApp('شـراء ثـغـرات')"><h2>🛠️ شـراء ثـغـرات</h2></div>
+    <div class="card" onclick="goWhatsApp('شـراء كـورسـات')"><h2>📚 شـراء كـورسـات</h2></div>
+    <div class="card" onclick="goWhatsApp('تـزويـد مـتـابـعـيـن')"><h2>👥 تـزويـد مـتـابـعـيـن</h2></div>
+    <div class="card" onclick="goWhatsApp('تـوثـيـق ڪـل بـرامـج الـسـوشـيـال مـيـديـا')"><h2>✔️ تـوثـيـق ڪـل بـرامـج الـسـوشـيـال مـيـديـا</h2></div>
+    <div class="card" onclick="goWhatsApp('حـل مـشـاكـل الابـتـزاز')"><h2>🔒 حـل مـشـاكـل الابـتـزاز</h2></div>
+    <div class="card" onclick="goWhatsApp('سـحـب بـيـانـات بـي رقـم')"><h2>📂 سـحـب بـيـانـات بـي رقـم</h2></div>
+    <div class="card" onclick="goWhatsApp('إنـشـاء مـتـجـر اكـتـرونـي')"><h2>🛒 إنـشـاء مـتـجـر اكـتـرونـي</h2></div>
+    <div class="card" onclick="goWhatsApp('شـحـن شـدات بـبـجـي')"><h2>🎮 شـحـن شـدات بـبـجـي</h2></div>
+    <div class="card" onclick="goWhatsApp('شـحـن جـواهـر فـري فـايـر')"><h2>🔥 شـحـن جـواهـر فـري فـايـر</h2></div>
+    <div class="card" onclick="goWhatsApp('شـراء حـسـابـات انـسـتـا')"><h2>📸 شـراء حـسـابـات انـسـتـا</h2></div>
+    <div class="card" onclick="goWhatsApp('شـراء حـسـابـات تـيـڪ تـوڪ')"><h2>🎵 شـراء حـسـابـات تـيـڪ تـوڪ</h2></div>
+    <div class="card" onclick="goWhatsApp('شـحـن كـويـنـات بـيـس')"><h2>⚽ شـحـن كـويـنـات بـيـس</h2></div>
+  </div>
+
+  <!-- صندوق التعليق -->
+  <div id="addCommentSection">
+    <h3>ضيف تعليقك</h3>
+    <textarea id="userComment" placeholder="اكتب تعليقك هنا..."></textarea><br />
+    <button onclick="addUserComment()">إرسال التعليق</button>
+  </div>
+
+  <!-- تعليقات وهمية -->
+  <div class="comments" id="commentsSection">
+    <div class="comment">فريق الدعم جميل جداً 👍</div>
+    <div class="comment">اشتريت قناة من الموقع وكنت شاكك بس الحمدلله طلعو ثقة وشكرا 🙏</div>
+    <div class="comment">أفضل موقع لتوثيق الحسابات 📜</div>
+    <div class="comment">خدمات ممتازة وسريعة، أنصح بالتعامل معهم 🚀</div>
+    <div class="comment">التعامل مع الموقع كان سلس وسهل جداً 👍</div>
+  </div>
+
+  <footer>
+    © 2025 الـمـسـتـفـز الاصـلـي — جميع الحقوق محفوظة
+  </footer>
+
+  <script>
+    const phoneNumber = "+201013782964";
+
+    function goWhatsApp(service) {
+      const message = encodeURIComponent(`مرحباً، أود الاستفسار عن خدمة: ${service}`);
+      const url = `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${message}`;
+      window.open(url, "_blank");
+    }
+
+    function addUserComment() {
+      const commentInput = document.getElementById("userComment");
+      const commentText = commentInput.value.trim();
+      if (!commentText) {
+        alert("يرجى كتابة تعليق قبل الإرسال");
+        return;
+      }
+
+      const commentsSection = document.getElementById("commentsSection");
+      const newComment = document.createElement("div");
+      newComment.classList.add("comment");
+      newComment.style.color = "#ffdddd";
+      newComment.style.fontWeight = "bold";
+      newComment.textContent = commentText;
+
+      commentsSection.appendChild(newComment);
+      commentInput.value = "";
+    }
+  </script>
+
+</body>
+</html>
